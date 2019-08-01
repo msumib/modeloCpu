@@ -30,7 +30,6 @@ public class MP {
     public void flush() {
         this.instrucoes = new String[100];
     }
-    
     public void print() {
         for(int i = 0; i < this.instrucoes.length; i++){
             System.out.println("Celula " + i + ": " + this.instrucoes[i]);

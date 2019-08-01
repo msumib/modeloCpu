@@ -22,9 +22,16 @@ public class Decodificador {
     public void decodificar(String instrucao) {
         instrucao = instrucao.replaceAll(", ", " ");
         String[] palavras = instrucao.split(" ");
-        for(int i = 0; i < palavras.length; i++){
-            System.out.println("Palavra " + i + ": " + palavras[i]);
-            
+        this.operacao = palavras[0].toUpperCase();
+        this.operando1 = palavras[1].toUpperCase();
+        this.operando2 = palavras[2].toUpperCase();
+        if(this.operacao.equals("ADD")){
+            //this.soma(this.operando1, this.operando2);
         }
+        
     }
+    
+    /*public int soma(String operando1, String operando2){
+        
+    }*/
 }

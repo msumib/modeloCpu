@@ -15,15 +15,10 @@ import java.util.List;
  */
 public class Processador {
     private Decodificador decodificador;
-    private ULA ula;
-    private Registrador registrador;
+    private Registrador[] registrador = new Registrador[8];
     private boolean[] sreg = new boolean[4];
 
     public Processador() {
-        this.decodificador = new Decodificador();
-        this.ula = new ULA();
-        this.registrador = new Registrador();
-    }
-
-    
+        this.decodificador = new Decodificador();        
+    }    
 }
